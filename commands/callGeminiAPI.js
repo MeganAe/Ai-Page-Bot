@@ -2,7 +2,7 @@ const request = require('request');
 
 function callGeminiAPI(prompt) {
   return new Promise((resolve, reject) => {
-    const apiUrl = `https://gemini-yvcl.onrender.com/api/ai/chat?prompt=${encodeURIComponent(prompt)}&id=40`;
+    const apiUrl = `https://metoushela-api-rest.onrender.com/api/deepseek-r1-distill-llama-70b?query=${encodeURIComponent(prompt)}&userId=40`;
     
     request(apiUrl, (error, response, body) => {
       if (error) {
